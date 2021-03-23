@@ -4,11 +4,11 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="8" value="yumememosテーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="50" y="70" width="200" height="110" as="geometry"/>
+                <mxCell id="8" value="yumememosテーブル" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=19;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="20" width="310" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="title&#10;memo&#10;category_id&#10;day_id&#10;deadline_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="8">
-                    <mxGeometry y="26" width="200" height="84" as="geometry"/>
+                <mxCell id="9" value="title (string型　not null)  &#10;memo (text型) &#10;category_id (integer型　not null)&#10;day_id (integer型　not null)&#10;deadline_id (integer型)&#10;image (ActiveStorageで実装)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="8">
+                    <mxGeometry y="26" width="310" height="144" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
