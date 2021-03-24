@@ -22,6 +22,19 @@ class MemosController < ApplicationController
     @memo = Memo.find(params[:id])
   end
 
+  def edit
+    @memo = Memo.find(params[:id])
+
+  end
+
+  def update
+    @memo = Memo.find(params[:id])
+    if @memo.update(memo_params)
+      redirect_to action: :show
+    else
+      render :edit
+    end
+  end
 
 
 
