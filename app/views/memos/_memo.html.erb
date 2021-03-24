@@ -1,5 +1,5 @@
 <div class="card">
-  <%= link_to image_tag(memo.image, class: :card__img ), root_path%>
+  <%= link_to image_tag(memo.image, class: :card__img ), memo_path(memo.id), method: :get %>
   <div class="card__body">
     <%= link_to "タイトル", root_path, class: :card__title%>
     <p class="card__summary">

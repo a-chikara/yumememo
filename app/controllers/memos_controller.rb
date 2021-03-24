@@ -16,8 +16,14 @@ class MemosController < ApplicationController
     else
       render :new
     end
-
   end
+
+  def show
+    @memo = Memo.find(params[:id])
+  end
+
+
+
 
   private
 
