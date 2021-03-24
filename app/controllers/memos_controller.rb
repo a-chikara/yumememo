@@ -36,6 +36,13 @@ class MemosController < ApplicationController
     end
   end
 
+  def destroy
+    binding.pry
+    @memo = Memo.find(params[:id])
+    @memo.destroy
+    redirect_to action: :index
+  end
+
 
 
   private
