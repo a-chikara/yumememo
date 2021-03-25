@@ -7,5 +7,5 @@
 | title          | string     | null: false                    |
 | memo           | text       |                                |
 | category_id    | integer    | null: false                    |
-| day_id         | integer    | null: false, foreign_key: true |
+| day_id         | integer    | null: false                    |
 | deadline_id    | integer    |                                |
