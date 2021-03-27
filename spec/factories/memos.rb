@@ -7,7 +7,6 @@ FactoryBot.define do
     day_id              {2}
     
 
-    association :memo
 
 
   end

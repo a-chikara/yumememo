@@ -2,15 +2,16 @@ class Memo < ApplicationRecord
   has_one_attached :image
 
 
-
-
-  with_options numericality: { other_than: 1 } do
-    validates :deadline_id
-    validates :category_id, presence: true
-    validates :day_id,      presence: true
+  with_options presence: true do
+    validates :image
+    validates :title
+    validates :info
+    with_options numericality: { other_than: 1 } do
+      validates :deadline_id
+      validates :category_id
+      validates :day_id
+    end
   end
-  validates :image,         presence: true
-  validates :title,       presence: true
 
 
   extend ActiveHash::Associations::ActiveRecordExtensions
