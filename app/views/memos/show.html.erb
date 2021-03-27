@@ -4,29 +4,34 @@
       <p class="prototype__hedding">
         <%= @memo.title%>
       </p>
-      <%= link_to "by プロトタイプの投稿者", root_path, class: :prototype__user %>
+            <div class="prototype__image">
+        <%= image_tag @memo.image %>
+      </div>
+      <%= link_to @memo.category.name, root_path, class: :prototype__user %>
+      <div class="prototype__body">
+        <div class="prototype__detail">
+          <p class="detail__title">詳細めも</p>
+          <p class="detail__message">
+            <%= @memo.info %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title">投稿日</p>
+          <p class="detail__message">
+            <%= @memo.day.name %>
+          </p>
+          <p class="detail__title">目標期日</p>
+          <p class="detail__message">
+            <%= @memo.deadline.name %>
+          </p>
+        </div>
       <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_memo_path(@memo.id), model: :get, class: :prototype__btn %>
           <%= link_to "削除する", memo_path(@memo.id), method: :delete, class: :prototype__btn %>
         </div>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
-      <div class="prototype__image">
-        <%= image_tag @memo.image %>
-      </div>
-      <div class="prototype__body">
-        <div class="prototype__detail">
-          <p class="detail__title">詳細めも</p>
-          <p class="detail__message">
-            <%= @memo.memo %>
-          </p>
-        </div>
-        <div class="prototype__detail">
-          <p class="detail__title">カテゴリー</p>
-          <p class="detail__message">
-            <%= @memo.category_id %>
-          </p>
-        </div>
+
       </div>
       <div class="prototype__comments">
         <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
