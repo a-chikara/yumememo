@@ -7,7 +7,7 @@
                 <mxCell id="8" value="memosテーブル" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=19;" vertex="1" parent="1">
                     <mxGeometry x="500" y="30" width="310" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="title (string型　not null)  &#10;memo (text型) &#10;category_id (integer型　not null)&#10;day_id (integer型　not null)&#10;deadline_id (integer型)&#10;image (ActiveStorageで実装)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="8">
+                <mxCell id="9" value="title (string型　not null)  &#10;memo (text型   not null) &#10;category_id (integer型　not null)&#10;day_id (integer型　not null)&#10;deadline_id (integer型)&#10;image (ActiveStorageで実装)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="8">
                     <mxGeometry y="26" width="310" height="144" as="geometry"/>
                 </mxCell>
                 <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.565;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;fontStyle=0;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;endSize=25;startSize=25;" edge="1" parent="1" target="29">
