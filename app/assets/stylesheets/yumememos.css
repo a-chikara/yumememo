@@ -81,8 +81,22 @@ a {
 }
 
 /* フォーム周り */
+
+.main {
+  display: flex;
+}
+
+.inner {
+  justify-content: center;
+}
+
 .form__wrapper{
   min-height: calc(100vh - 161px);
+}
+
+.field {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .form__text {
@@ -101,10 +115,10 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #fff;
+  color: rgb(2, 1, 1);
   text-decoration: none;
   user-select: none;
-  background: #f3fae1;
+  background: #bff043;
   border: 1px #f3fae1 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
