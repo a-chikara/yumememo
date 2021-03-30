@@ -2,7 +2,7 @@
   <%= link_to image_tag(memo.image, class: :card__img ), memo_path(memo.id), method: :get if memo.image.attached? %>
   <%# <%= link_to image_tag(memo.image, class: :card__img ), memo_path(memo.id), method: :get if memo.image.attached? %>
   <div class="card__body">
-    <%= link_to memo.title, memo_path(memo.id), method: :get, class: :card__title%>
+    <%= link_to memo.title, memo_path(memo.id), method: :get, class: :card__title %>
     <%# <p class="card__summary">
       <%= "プロトタイプのキャッチコピー" %>
     <%# </p>  %>

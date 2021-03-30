@@ -5,7 +5,7 @@
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
 | title          | string     | null: false                    |
-| memo           | text       |                                |
+|            | text       |                                |
 | category_id    | integer    | null: false                    |
 | day_id         | integer    | null: false                    |
-| deadline_id    | integer    |                                |
+| deadline_id    | integer    | null: false                    |

@@ -17,7 +17,6 @@ div {
 
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
 }
 
 li {
@@ -37,13 +36,12 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #f1f8fe;
-  margin-bottom: 48px;
-  padding: 20px 0;
+  background-color: #f3fae1;
+  padding: 20px;
 
 }
 .inner {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
 .nav {
@@ -83,8 +81,22 @@ a {
 }
 
 /* フォーム周り */
+
+.main {
+  display: flex;
+}
+
+.inner {
+  justify-content: center;
+}
+
 .form__wrapper{
   min-height: calc(100vh - 161px);
+}
+
+.field {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .form__text {
@@ -103,11 +115,11 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #fff;
+  color: rgb(2, 1, 1);
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #bff043;
+  border: 1px #f3fae1 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -130,12 +142,37 @@ a {
   font-size: 30px;
   margin-bottom: 28px;
 }
+
+.inner {
+  display: flex;
+}
+
+.side_bar {
+  background-color: #f3fae1;
+  color:black;
+  width: 200px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.category_letter {
+  margin-bottom: 20px;
+}
+
+.category_branch {
+  display: block;
+  margin-top: 10px;
+  font-size: small;
+  color: #797a7a;
+}
+
+
 .card__wrapper {
-  /* display: flex;  */
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   align-items: center;
   min-height: calc(100vh - 161px);
+  width: 100%;
+  padding-top: 60px;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -150,9 +187,6 @@ a {
 .card__body {
   display: flex;
   justify-content: center;
-
-
-  /* padding-left: 50px; */
 }
 
 .card__title {
@@ -292,7 +326,7 @@ a {
 /* タブレット対応 */
 @media (max-width: 1024px) {
   .inner {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .page-heading {

@@ -5,7 +5,7 @@ class CreateMemos < ActiveRecord::Migration[6.0]
       t.text         :info,           null: false
       t.integer      :category_id ,   null: false
       t.integer      :deadline_id,    null: false
-      t.integer      :day_id,         null: false    
+      t.integer      :day_id,         null: false
       t.timestamps
     end
   end
